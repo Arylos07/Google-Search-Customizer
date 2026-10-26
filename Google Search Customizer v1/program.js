@@ -45,6 +45,7 @@ if(checkIfRun()){
         "thingsToKnowWidget": false,
         "imagesWidget": false,
         "featuredSnippet": false,
+        "aiOverview": false,
         "dictionaryWidget": false,
         "businessesWidget": false,
         "topSightsWidget": false,
@@ -387,7 +388,9 @@ function modifySearchResults(configuration){
     if(configuration.featuredSnippet){
         removeElements("#Odp5De", 0);
         removeElements(".yKMVIe", 10);
-        
+    }
+
+    if(configuration.aiOverview){
         //AI Overview
         removeElements(".Wm5I1e", 0);
         removeElements(".YzCcne", 0);

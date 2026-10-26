@@ -149,6 +149,10 @@ window.addEventListener('load', (event) => {
             changeConfig("featuredSnippet", event.target.checked);
         });
 
+        document.getElementById("aiOverviewCheckBox").addEventListener("change", event =>{
+            changeConfig("aiOverview", event.target.checked);
+        });
+
         document.getElementById("dictionaryWidgetCheckBox").addEventListener("change", event =>{
             changeConfig("dictionaryWidget", event.target.checked);
         });
@@ -242,6 +246,7 @@ window.addEventListener('load', (event) => {
                 "thingsToKnowWidget": false,
                 "imagesWidget": false,
                 "featuredSnippet": false,
+                "aiOverview": false,
                 "dictionaryWidget": false,
                 "businessesWidget": false,
                 "topSightsWidget": false,
@@ -303,6 +308,7 @@ window.addEventListener('load', (event) => {
         document.getElementById("thingsToKnowWidgetCheckBox").checked = configuration.thingsToKnowWidget;
         document.getElementById("imagesWidgetCheckBox").checked = configuration.imagesWidget;
         document.getElementById("featuredSnippetCheckBox").checked = configuration.featuredSnippet;
+        document.getElementById("aiOverviewCheckBox").checked = configuration.aiOverview;
         document.getElementById("dictionaryWidgetCheckBox").checked = configuration.dictionaryWidget;
         document.getElementById("businessesWidgetCheckBox").checked = configuration.businessesWidget;
         document.getElementById("topSightsWidgetCheckBox").checked = configuration.topSightsWidget;
